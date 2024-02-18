@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furawa</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/jpg" href="img/icons/favicon.ico"/>
+</head>
+<body>
+
+    <header id="header">
+        <div>
+            <img src="img/icons/menuIcon.png" alt="" id="menuIcon" onclick="desplegable()">
+            <a href="index.html"><h1>Furawa</h1></a>
+        </div>
+        <div>
+            <button onclick="registrarse()" id="btnReg">REGISTRARSE</button>
+            <button onclick="iniciarSesion()" id="btnIni">INICIAR SESIÓN</button>
+        </div>
+    </header>
+
+    <div id="sideDrop">
+        <a id="X" onclick="closeSD()"><img src="img/icons/X36S.png" alt=""></a>
+        <section>
+            <a href="index.html" id="furawa"><h1>Furawa</h1></a>
+            <div>
+                <h2>JUEGOS</h2>
+                <a href="TLOU.html"><h3>The Last Of Us</h3></a>
+                <a href="RDR.html"><h3>Red Dead Redemption</h3></a>
+                <a href="UNC.html"><h3>Uncharted</h3></a>
+            </div>
+            <div>
+                <h2>NOTICIAS</h2>
+                <a href="noticias.html"><h3>Últimas noticias</h3></a>
+            </div>
+            <div>
+                <h2>COMUNIDAD</h2>
+                <a href="aboutUs.html"><h3>Sobre nosotros</h3></a>
+                <a href="asistencia.html"><h3>Asistencia</h3></a>
+                <a href="404.html"><h3>Foro (En construcción)</h3></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTENIDO -->
+    <section id="body">
+            <link rel="stylesheet" href="css/index.css">
+        
+            <section id="slider">
+                <div id="s1" onclick="chFocus(-1)"></div>
+        
+                <div id="s2" onclick="urlNews()">
+                    <div id="infoSlider"></div>
+                </div>
+                
+                <div  id="s3" onclick="chFocus(1)"></div>
+            </section>
+        
+            <section id="games">
+                <h1>NUESTROS JUEGOS</h1>
+                <div id="row">
+                    <div style="background-image: url(img/games/TLOU/caratula.png);" onclick="window.open('TLOU.html')">
+                        <h2>THE LAST OF US</h2>
+                    </div>
+                    
+                    <div style="background-image: url(img/games/RDR/caratula.png);" onclick="window.open('RDR.html')">
+                        <h2>RED DEAD REDEMPTION</h2>
+                    </div>
+                    <div style="background-image: url(img/games/UNCHARTED/caratula.jpg);" onclick="window.open('UNC.html')">
+                        <h2>UNCHARTED</h2>
+                    </div>
+                </div>
+            </section>
+            <script src="js/slider.js">showSlides()</script>
+    </section>
+    <!-- FIN CONTENIDO -->
+
+
+    
+    <footer>
+        <div>
+            <p>2024 Furawa Game Studio</p>
+            <p><a href="">Términos y Condiciones</a></p>
+        </div>
+        <div id="rrss">
+            <a href="#"><img src="img/footer/Twitter.png"   alt="Twitter"></a>
+            <a href="#"><img src="img/footer/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="img/footer/Facebook.png"  alt="Facebook"></a>
+            <a href="#"><img src="img/footer/Twitch.png"    alt="Twitch"></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=UmIOv4St94PTdLPf"><img src="img/footer/Youtube.png"   alt="Youtube"></a>
+            <a href="#"><img src="img/footer/Reddit.png"    alt="Reddit"></a>
+            <a href="#"><img src="img/footer/Discord.png"   alt="Discord"></a>
+        </div>
+    </footer>
+
+    <a onclick="closeSesion()" id="blur"></a>
+    <div id="popup" class="blur"></div>
+
+    <script src="js/general.js"></script>
+</body>
+</html>

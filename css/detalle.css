@@ -1,0 +1,118 @@
+:root {
+    /*Colors*/
+    --primary50: #F2EDE5;
+    --neutral50: #F7F8F8;
+    --neutral900: #3e4949;
+    --neutral900T: #3e49493b;
+}
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+#body h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+/* PORTADA */
+#portada {
+    /* background-image: none;  EN EL HTML */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;   
+
+    color: white;
+    width: 100%;
+    height: 468px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#portada > h1 {
+    font-size: 60px;
+}
+
+/* BOTONES */
+#portada > div {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 20%;
+}
+#portada > div > a{
+    padding: 20px;
+    border-radius: 5px;
+}
+#portadaBtn > a:first-child {
+    background-color: var(--neutral900T);
+    border: thin solid var(--primary50);
+    color: var(--primary50);
+}
+#portadaBtn > a:last-child {
+    background-color: var(--primary50);
+    border: thin solid var(--primary50);
+    font-weight: bold;
+    color: var(--neutral900);
+}
+
+/* CONTENIDO */
+#content {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+#content > div {
+    width: 60%;
+    padding: 30px;
+    border-top: medium solid var(--neutral900T);
+}
+
+#about > p {
+    line-height: 1.5em;
+    font-size: 20px;
+    text-justify: distribute;
+}
+
+/* -------GALERÍA DE IMÁGENES--------------------------------------------------------------------------------*/
+#gallery {
+    min-width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#gallery > span {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#gallery > span >img {
+    height: 300px;
+    width: auto;
+    margin: 10px 5px;
+}
+iframe {
+    align-self: center;
+    margin: 30px;
+    width: 1020px;
+    height: 630px;
+}
